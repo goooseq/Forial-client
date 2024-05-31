@@ -2,7 +2,7 @@ import '../App.css';
 import { Text, Flex, Input, Heading, Button, InputLeftElement, Stack,InputGroup,InputRightElement} from '@chakra-ui/react';
 import { AuthRoute, HomeRoute, ShopRoute, ContactRoute,NewsRoute} from '../utils/const';
 import {Link} from 'react-router-dom'
-import {useRef} from 'react';
+import {useRef, useEffect} from 'react';
 import {Context} from '../index'; 
 import { useContext } from 'react'; 
 import { observer } from 'mobx-react-lite'; 
@@ -10,8 +10,12 @@ import { useState } from 'react';
 const NavBar = () => { 
     const prevScrollY = useRef(0); 
     const [isNavBarVisible, setIsNavBarVisible] = useState(true); 
-    const {store} = useContext(Context)
+    const {store} = useContext(Context);
+    const [email,setEmail] = useState('');
     {store.isAuth ? (<div>Hello</div>):(<Link to={AuthRoute}/>)};
+    useEffect(() => { 
+        setEmail(store.user.email) 
+    }, [store])
     return (
       <>
         <Flex>
@@ -59,9 +63,6 @@ const NavBar = () => {
         padding={'10px 50px'}
         >
 
-
-       
-
         <Link
             to={HomeRoute}>
             <Heading color={'teal'} display={'flex'}>Forial
@@ -75,17 +76,17 @@ const NavBar = () => {
 
             <Flex>
             <Stack spacing={4}>
-  <InputGroup>
+<InputGroup>
     <InputLeftElement pointerEvents='none'>
     </InputLeftElement>
     <Input color={'teal'} type='tel' placeholder='Search' />
-  </InputGroup>
-   
+</InputGroup>
+
 </Stack>
                 <Link
                     to={NewsRoute}>   
-                 <Button colorScheme='black' variant='ghost'>
-                   About Us
+                <Button colorScheme='black' variant='ghost'>
+                About Us
                     </Button>
                     </Link>
                 <Link
@@ -94,10 +95,9 @@ const NavBar = () => {
                         Shop
                     </Button>
                     </Link>
-                   
             </Flex>
             <Flex> 
-                {store.isAuth ? (<div>Hello</div>) :( 
+                {store.isAuth ? (<div>{email}</div>) :( 
                     <Link  to={AuthRoute}> 
                         <button className='header_btn'>Login</button> 
                     </Link> 

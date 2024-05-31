@@ -16,9 +16,6 @@ const  TrubkiItem = () =>{
             height={'150px'}
        >
 
-       
-
-
           
         <Flex
             justify={'center'}

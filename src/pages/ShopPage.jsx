@@ -4,6 +4,8 @@ import CardItem from '../components/carditem';
 // import ScorpenaAlpha from '../components/ScorpenaAlpha'; 
 
 import NavBar from '../components/NavBar'; 
+import JasiItem from '../components/jasiitem';
+import MasciItem from '../components/masciitem';
 const ShopPage = () =>{ 
   return ( 
     <>
@@ -23,8 +25,8 @@ const ShopPage = () =>{
         <CardItem/> 
         <CardItem/> 
         <CardItem/> 
-        <CardItem/> 
-        <CardItem/> 
+        <JasiItem/> 
+        <MasciItem/> 
         <CardItem/> 
         <CardItem/> 
         <CardItem/> 
