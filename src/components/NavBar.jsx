@@ -6,6 +6,7 @@ import {useRef} from 'react';
 import {Context} from '../index'; 
 import { useContext } from 'react'; 
 import { observer } from 'mobx-react-lite'; 
+import { useState } from 'react';
 const NavBar = () => { 
     const prevScrollY = useRef(0); 
     const [isNavBarVisible, setIsNavBarVisible] = useState(true); 
