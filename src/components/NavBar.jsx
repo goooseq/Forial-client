@@ -1,6 +1,6 @@
 import '../App.css';
 import { Text, Flex, Input, Heading, Button, InputLeftElement, Stack,InputGroup,InputRightElement} from '@chakra-ui/react';
-import { AuthRoute, HomeRoute, ShopRoute, ContactRoute,NewsRoute} from '../utils/const';
+import { AuthRoute, HomeRoute, ShopRoute, ContactRoute,NewsRoute,CostumesRoute} from '../utils/const';
 import {Link} from 'react-router-dom'
 import {useRef, useEffect} from 'react';
 import {Context} from '../index'; 

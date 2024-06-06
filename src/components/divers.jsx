@@ -5,7 +5,7 @@ import divers from '../images/divers.jpg'
 import Carousel from './Carousel';
 import React from 'react';
 import watch from '../images/watch.jpg'
-
+import { CostumesRoute} from '../utils/const';
 const  DiversItem = () =>{
     // const images = [
     //     {lasty},
@@ -20,7 +20,7 @@ const  DiversItem = () =>{
 
 
             
-            
+      
         <Flex
             justify={'center'}
             align={"center"}
@@ -33,7 +33,18 @@ const  DiversItem = () =>{
                 alt='Дайверы'
                 className='photoHover'
             /> }
-            <Text position={"absolute"} alignContent={'center'} flexWrap={'wrap'} fontSize={'30px'} color={"white"}><b> <a href="#">Костюмы и аксессуары</a></b></Text>
+
+
+
+
+
+
+                    
+                         <Text position={"absolute"} alignContent={'center'} flexWrap={'wrap'} fontSize={'30px'} color={"white"}><b> Костюмы и аксессуары</b></Text>
+                  
+            
+
+
         </Flex>
     
 

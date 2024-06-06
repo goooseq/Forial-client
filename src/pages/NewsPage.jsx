@@ -1,8 +1,9 @@
 import '../App.css';
-import { Text, Box, Flex, InputLeftElement, InputGroup, Stack, Input, InputRightElement, AbsoluteCenter } from '@chakra-ui/react';
+import { Image,Text, Box, Flex, InputLeftElement, InputGroup, Stack, Input, InputRightElement, AbsoluteCenter } from '@chakra-ui/react';
 import { Link } from 'react-router-dom'
 import NavBar from '../components/NavBar';
 import AboutUs from '../images/AboutUs.jpg'
+import Store from '../images/Store.webp'
 const NewsPage = () => {
     return (
         <>
@@ -25,7 +26,7 @@ const NewsPage = () => {
                     height={'100%'}
 
                 >
-                    <Text fontSize={'30px'} color={'teal'}>Please Contacts Us</Text>
+                    <Text fontSize={'30px'} color={'teal'}>AboutUs</Text>
 
                     <Flex
 
@@ -44,77 +45,61 @@ const NewsPage = () => {
 
                         <Box >
                             <Link>
-                                <Text color={'teal'}>VISIT THE SHOP IN PERSON</Text>
+                                <Text color={'teal'}>History of Lucas Divestore</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>DiveLife</Text>
+                                <Text color={'teal'}>In the 60ies of the previous century, Dick Lucas (1945 and founder of Lucas Diving) was already active in diving the Great Barrier Reef (Australia). Early 80ies Dick Lucas together with his son Richard became certified divers and in 1983 LUCAS DIVING was founded. A family company with Dick, Dinie and their sons Richard and Bjorn. Over the last 4 decades it grew to a company with a loyal team and within the dive industry Lucas Diving became a trendsetter in Europe and also far outside of Europe. Dick, Bjorn and Richard are still active divers and all 3 are scuba-instructors (Dick is even a Course Director Trainer)</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>StonePale Buildings</Text>
+                                <Text color={'teal'}>It started in 1983 out of their home in Almelo, and after a few years it moved to Wierden to a larger place. 5 years later again it moved to a new place in Nijverdal and in 2005 the Lucas family bought the premises of over 4000 m2 meter in which it is located today.</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Victoria Lane</Text>
+                                <Text color={'teal'}>The Lucas company has many customers in different areas. E.g. in 1995 Dick was asked to service the Dutch Royal Family after their official state visit to Indonesia, the Royal Family planned some extra private days for scuba diving and Dick made sure all became a pleasant experience for them. Richard Lucas has been involved in the 90ties in the first Arctic and Antarctic scuba dive expeditions (North and South pole) and he himself dove under both the ice shelves. Also Bjorn is active with groups traveling to the most isolated areas and takes care of the diving and logistics. </Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Whitefield, M45 6BL</Text>
+                                <Text color={'teal'}>Dick Lucas was, and is still now, the only European who became a member of the board of directors from DEMA (Diving Equipment and Marketing Association). Through this the contacts where made with heroes like Jaques Yves Cousteau (who passed away at the age of 87) and his son Jean Michel Cousteau. Al Giddings (uw-filmer known for e.g. James Bond movies and the Abyss, Titanic) Silvia Earl (the first female deep sea oceanograph) and many movie stars and celebrities who are connected with scuba diving.</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>Manchester</Text>
+                                <Text color={'teal'}>Among the customers of Lucas Diving are many different people, groups, companies. From Royalty, gouvernement, fire departments, army, police, special forces, universities, musea, pools, dive schools, dive centres and hopefully also you. In 2006 Lucas Diving went also online with the Lucasdivestore website and within short time frame became a leading company with presenting all major scuba diving brands, this all made possible due to the dynamic team working within Lucas Diving.</Text>
+                            </Link>
+                            <Link >
+                                <Text color={'teal'}>Lucas Duiksport B.V.</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>0161 796 0300</Text>
+                                <Text color={'teal'}>Bedrijvenweg 3a</Text>
                             </Link>
                             <Link>
-                                <Text color={'teal'}>We have a large car park at the rear of the building, simply drive past the shop, and turn left through the green double gates. Please let us know if you want to come in person.</Text>
+                                <Text color={'teal'}>Contact: D.B.A. Lucas</Text>
                             </Link>
-                        </Box>
+                            <Link>
+                                <Text color={'teal'}>Email: info@lucasdivestore.com</Text>
+                            </Link>
 
-                        <Box paddingLeft={'30px'}>
-                            <Link>
-                                <Text color={'teal'}>OPENING TIMES</Text>
-                            </Link>
-                            <Link>
-                                <Text color={'teal'}>The Warehouse is open :</Text>
-                            </Link>
-                            <Link>
-                                <Text color={'teal'}>Monday:           -</Text>
-                            </Link>
-                            <Link>
-                                <Text color={'teal'}>Tuesday:           9.00 - 16.00</Text>
-                            </Link>
-                            <Link>
-                                <Text color={'teal'}>Wednesday:      9.00 - 16.00</Text>
-                            </Link>
-                            <Link>
-                                <Text color={'teal'}>Thursday:         9.00 - 17.30</Text>
-                            </Link>
-                            <Link>
-                                <Text color={'teal'}>Friday:              -</Text>
-                            </Link>
-                            <Link>
-                                <Text color={'teal'}>Saturday:          -</Text>
-                            </Link>
-                            <Link>
-                                <Text color={'teal'}>Sunday:            -</Text>
-                            </Link>
-                            <Link>
-                                <Text color={'teal'}>Visits outside these hours possible by appointment only.</Text>
-                            </Link>
+                           
                         </Box>
+                   
 
 
-                        <Box paddingLeft={'40px'}>
-                            <Link>
-                                <Text color={'teal'}>EXPLORE US ONLINE</Text>
-                            </Link>
-                            <Link>
-                                <Text color={'teal'}>Contact us via the phone on our warehouse open days or via the contact form.</Text>
-                            </Link>
-                        </Box>
+
+                       
                     </Flex>
 
 
+                    <Flex
+            justify={'center'}
+            align={"center"}
+            mb={'70px'} 
+        >
+            {<Image
+                src={Store}
+                width={'780px'}
+                height={'410px'}
+                // width={'80%'}
+                alt='Дайверы'
+                className='photoHover'
+            /> }
 
+</Flex>
 
 
 
@@ -139,43 +124,7 @@ const NewsPage = () => {
 
 
         
-                
-                    <Flex
-                        display={'flex'}
-                        justify={'center'}
-                        alignItems={'center'}
-                        height={'300px'}
-                        width={'100%'}
-                        bgColor={'white'}
-                    >
-                        <Flex justify={'center'} width={'800px'}>
-                        <Flex flexWrap={'wrap'} width={'80%'} spacing={4}>
-                                <Flex width={'90%'} justify={'space-between'}>
-                                    <Text width={'15%'} color={'teal'}>Email</Text>
-                                    <Input width={'100%'} type='tel' placeholder='Enter your mail' />
-                                </Flex>
-             
-
-                                <Flex width={'90%'} justify={'space-between'}>
-                                    <Text width={'15%'} color={'teal'}>Order</Text>
-                                    <Input width={'100%'} placeholder='Enter your number' />
-                                </Flex>
-
-
-                                <Flex width={'90%'} justify={'space-between'}>
-                                    <Text width={'15%'} color={'teal'}>Name</Text>
-                                    <Input width={'100%'} type='tel' placeholder='Enter your full name' />
-                                </Flex>
-             
-
-                                <Flex width={'90%'} justify={'space-between'}>
-                                    <Text width={'15%'} color={'teal'}>Message</Text>
-                                    <Input width={'100%'} placeholder='Enter your massage' />
-                                </Flex>
-                        </Flex>
-                        </Flex>
-                       
-                    </Flex>
+            
                 </Flex>
             </Flex>
 

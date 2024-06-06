@@ -2,7 +2,7 @@ import '../App.css';
 import { Flex } from '@chakra-ui/react'; 
 import CardItem from '../components/carditem'; 
 // import ScorpenaAlpha from '../components/ScorpenaAlpha'; 
-
+import PlawkiItem from '../components/plawkiitem'
 import NavBar from '../components/NavBar'; 
 import JasiItem from '../components/jasiitem';
 import MasciItem from '../components/masciitem';
@@ -23,13 +23,14 @@ const ShopPage = () =>{
         mt={'50px'} 
     > 
         <CardItem/> 
-        <CardItem/> 
-        <CardItem/> 
+        <JasiItem/> 
+        <MasciItem/> 
+        <PlawkiItem/> 
         <JasiItem/> 
         <MasciItem/> 
         <CardItem/> 
-        <CardItem/> 
-        <CardItem/> 
+        
+        
         <CardItem/> 
         {/* <ScorpenaAlpha/>  */}
     </Flex> 
